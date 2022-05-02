@@ -23,7 +23,7 @@ window.onload = function () {
 };
 
 function drawBoxxy() {
-  ctx.fillStyle = "black";
+  ctx.fillStyle = "green";
   ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
   ctx.fillStyle = "blue";
@@ -32,4 +32,6 @@ function drawBoxxy() {
   ctx.fillRect(decrementor--, decrementor--, 250, 250);
   ctx.fillStyle = "red";
   ctx.fillRect(incrementor++, decrementor--, incrementor++, incrementor++);
+  ctx.fillStyle = "yellow";
+  ctx.fillRect(125, 125, incrementor++, incrementor++);
 }
