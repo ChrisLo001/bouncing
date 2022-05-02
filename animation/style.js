@@ -4,6 +4,7 @@ canvas.height = window.innerHeight;
 var ctx = canvas.getContext("2d");
 
 var x = 0;
+var y = 0;
 
 // Here I am going to set the speed
 var incrementor = 2;
@@ -33,5 +34,10 @@ function drawBoxxy() {
   x += incrementor;
   console.log(incrementor + "  incrementor value");
 }
-
+  while (y + incrementor > canvas.width || y + incrementor < 0) {
+    incrementor = -incrementor;
+  }
+  y += incrementor;
+  console.log(incrementor + "  incrementor value");
+}
 setInterval(drawBoxxy, 10);
