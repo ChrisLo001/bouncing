@@ -12,6 +12,10 @@ function Square() {
   ctx.fillStyle = "blue";
   ctx.fillRect(x, 10, 100, 100);
 }
+function Square() {
+  ctx.fillStyle = "red";
+  ctx.fillRect(x, 10, 100, 100);
+}
 
 function drawBoxxy() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
